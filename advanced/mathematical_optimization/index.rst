@@ -613,16 +613,16 @@ are also supported by L-BFGS-B::
     >>> def jacobian(x):
     ...     return np.array((-2*.5*(1 - x[0]) - 4*x[0]*(x[1] - x[0]**2), 2*(x[1] - x[0]**2)))
     >>> sp.optimize.minimize(f, [2, 2], method="L-BFGS-B", jac=jacobian)
-     message: CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL
-     success: True
-      status: 0
-         fun: 1.4417677473...e-15
-           x: [ 1.000e+00  1.000e+00]
-         nit: 16
-         jac: [ 1.023e-07 -2.593e-08]
-        nfev: 17
-        njev: 17
-    hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      message: CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL
+      success: True
+       status: 0
+          fun: 1.4417677473...e-15
+            x: [ 1.000e+00  1.000e+00]
+          nit: 16
+          jac: [ 1.023e-07 -2.593e-08]
+         nfev: 17
+         njev: 17
+     hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
 
 Gradient-less methods
 ----------------------
